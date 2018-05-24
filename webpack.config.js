@@ -9,7 +9,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 
-const BUILD_DIR = path.join(__dirname, 'dist');
+const BUILD_DIR = path.join(__dirname, 'docs');
 const APP_DIR = path.join(__dirname, 'src');
 const  VENDOR_LIBS = ['react', 'react-dom', 'react-router-dom']
 
@@ -24,7 +24,7 @@ const config = {
   output: {
     // path: BUILD_DIR,
     // filename: '[name].[hash].js'
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].[hash].js',
     publicPath: '/'
   },
